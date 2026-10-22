@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Speedy Bee Carwash | Malaybalay City</title>
+<meta name="description" content="Carwash at detailing sa Malaybalay City. Mabilis, malinis, at abot-kaya.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f3f8fd;--card:#fff;--ink:#0b2a4a;--mute:#4a6482;--line:#d3e0ee;--honey:#f2b705;--on-honey:#0b2a4a;--deep:#0b2a4a;--on-deep:#f3f8fd;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#08182b;--card:#0f2641;--ink:#eaf1fa;--mute:#9bb2cc;--line:#1e3a5c;--honey:#ffc928;--deep:#0f2641;--on-deep:#eaf1fa}}
+:root[data-theme="dark"]{--bg:#08182b;--card:#0f2641;--ink:#eaf1fa;--mute:#9bb2cc;--line:#1e3a5c;--honey:#ffc928;--deep:#0f2641;--on-deep:#eaf1fa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:Archivo,Figtree,system-ui,sans-serif;margin:0;line-height:1.1}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{width:22px;height:24px;background:var(--honey);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+nav{display:flex;gap:18px;align-items:center;font-weight:500}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--honey);color:var(--on-honey);font-weight:600;text-decoration:none;padding:12px 20px;border-radius:10px;border:2px solid var(--honey)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+nav .btn{padding:8px 14px;color:var(--on-honey)}
+.hero{padding:56px 0 44px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.hero h1{font-size:clamp(34px,7vw,58px);font-weight:800;letter-spacing:-.02em}
+.hero p{font-size:18px;color:var(--mute);max-width:46ch;margin:16px 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.comb{display:flex;flex-direction:column;align-items:center;gap:0}
+.comb div{display:flex;gap:6px}
+.comb div+div{margin-top:-24px}
+.hex{width:118px;height:136px;display:grid;place-items:center;text-align:center;font:700 14px/1.2 Archivo,sans-serif;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:var(--card);color:var(--ink)}
+.hex.h{background:var(--honey);color:var(--on-honey)}
+.hex b{display:block;font-size:24px}
+section{padding:48px 0}
+.sec-deep{background:var(--deep);color:var(--on-deep)}
+h2{font-size:clamp(26px,5vw,36px);font-weight:800;margin-bottom:8px}
+.lead{color:var(--mute);margin:0 0 28px;max-width:56ch}
+.sec-deep .lead{color:var(--on-deep);opacity:.8}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.svc h3{font-size:19px}
+.svc .p{font:800 26px Archivo,sans-serif}
+.svc small{color:var(--mute)}
+.svc ul{margin:8px 0 0;padding-left:18px;color:var(--mute);font-size:15px}
+.svc.top{border:2px solid var(--honey)}
+.note{margin-top:16px;color:var(--mute);font-size:14px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.why h3{font-size:18px;margin-bottom:4px}
+.why p{margin:0;opacity:.85}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.info{display:grid;gap:14px}
+.info b{display:block;font-family:Archivo,sans-serif;font-size:17px}
+.info span{color:var(--mute)}
+.hours{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.hours div{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid var(--line)}
+.hours div:first-of-type{border-top:0}
+footer{padding:26px 0;border-top:1px solid var(--line);color:var(--mute);font-size:14px;text-align:center}
+@media (max-width:720px){nav a:not(.btn){display:none}.hero .wrap,.contact{grid-template-columns:1fr}.comb{order:-1;transform:scale(.8);margin:-12px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#home"><i></i>Speedy Bee Carwash</a>
+    <nav>
+      <a href="#home">Home</a><a href="#serbisyo">Serbisyo at presyo</a><a href="#contact">Contact</a>
+      <a class="btn" href="https://m.me/YOUR-PAGE-NAME">Mag-message</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <h1>Mabilis na hugas, malinis na parang bago.</h1>
+      <p>Carwash at detailing sa Malaybalay City. Iwan mo ang sasakyan, balikan mo na kumikinang, sa presyong hindi masakit sa bulsa.</p>
+      <div class="cta">
+        <a class="btn" href="https://m.me/YOUR-PAGE-NAME">Mag-book sa Messenger</a>
+        <a class="btn alt" href="#serbisyo">Tingnan ang presyo</a>
+      </div>
+    </div>
+    <div class="comb" aria-hidden="true">
+      <div><span class="hex h"><span><b>Wash</b>mabilis</span></span><span class="hex"><span><b>Wax</b>kintab</span></span></div>
+      <div><span class="hex"><span><b>Interior</b>linis loob</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="serbisyo">
+  <div class="wrap">
+    <h2>Serbisyo at presyo</h2>
+    <p class="lead">Simula sa presyo para sa sedan. Mas mataas nang kaunti para sa SUV at pickup.</p>
+    <div class="grid">
+      <div class="svc"><h3>Basic Wash</h3><div class="p">₱150</div><small>simula sa</small><ul><li>Hugas at banlaw</li><li>Tuyo at kinis ng labas</li><li>Vacuum ng loob</li></ul></div>
+      <div class="svc top"><h3>Wash at Wax</h3><div class="p">₱350</div><small>simula sa, pinakapopular</small><ul><li>Lahat ng Basic Wash</li><li>Wax para sa kintab at proteksyon</li><li>Tire shine</li></ul></div>
+      <div class="svc"><h3>Interior Detail</h3><div class="p">₱800</div><small>simula sa</small><ul><li>Malalim na linis ng upuan at carpet</li><li>Dashboard at panel</li><li>Tanggal amoy</li></ul></div>
+      <div class="svc"><h3>Full Detail</h3><div class="p">₱1,500</div><small>simula sa</small><ul><li>Loob at labas</li><li>Wax at tire shine</li><li>Engine bay wipe-down</li></ul></div>
+    </div>
+    <p class="note">Ang presyo ay depende sa laki at kondisyon ng sasakyan. Mag-message para sa eksaktong quote.</p>
+  </div>
+</section>
+
+<section class="sec-deep">
+  <div class="wrap">
+    <h2>Bakit dito ka maghugas</h2>
+    <p class="lead">Simple lang ang pangako namin.</p>
+    <div class="why">
+      <div><h3>Walang paghihintay</h3><p>Dumating ka, ma-aasikaso ka agad. Pwede ka ring mag-book muna sa Messenger.</p></div>
+      <div><h3>Presyong malinaw</h3><p>Nakalista ang presyo, walang dagdag na sorpresa pagdating ng bayaran.</p></div>
+      <div><h3>Maingat sa sasakyan mo</h3><p>Malinis na tela at tamang sabon, para walang gasgas at walang tira-tirang mantsa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Pumunta o mag-message</h2>
+      <p class="lead">Mas mabilis sumagot sa Messenger. Pwede ring dumiretso lang sa shop.</p>
+      <div class="info">
+        <div><b>Lokasyon</b><span>[Street / landmark], Malaybalay City, Bukidnon</span></div>
+        <div><b>Telepono</b><span><a href="tel:+639000000000">0900 000 0000</a></span></div>
+        <div><b>Facebook</b><span><a href="https://m.me/YOUR-PAGE-NAME">Speedy Bee Carwash</a></span></div>
+      </div>
+      <p style="margin-top:22px"><a class="btn" href="https://m.me/YOUR-PAGE-NAME">Mag-message ngayon</a></p>
+    </div>
+    <div class="hours">
+      <h3 style="margin-bottom:10px">Oras ng bukas</h3>
+      <div><span>Lunes hanggang Biyernes</span><b>8:00 AM - 6:00 PM</b></div>
+      <div><span>Sabado</span><b>8:00 AM - 6:00 PM</b></div>
+      <div><span>Linggo</span><b>9:00 AM - 5:00 PM</b></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Speedy Bee Carwash, Malaybalay City</div></footer>
+</body>
+</html>
